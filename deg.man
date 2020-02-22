@@ -1,0 +1,27 @@
+.TH DEG 1
+.SH NAME
+deg \- degree format converter
+.SH SYNOPSIS
+.B conv/deg
+.I degrees
+.SH DESCRIPTION
+.I Deg
+is a format converter that translates from decimal to
+sexagesimal
+.B degrees
+and vice versa.
+.SH EXAMPLES
+.IP
+.EX
+% conv/deg 25.243294234
+25°14'35.8592"
+
+% conv/deg 25°14''''35.8592"
+25.2433°
+.EE
+.SH SOURCE
+.B /sys/src/cmd/conv
+.SH NOTES
+Beware of
+.IR rc(1) 's
+quoting behavior.
